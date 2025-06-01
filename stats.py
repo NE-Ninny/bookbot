@@ -24,9 +24,8 @@ def character_count(filepath):
         "z": 0, " ": 0
     }
 
-    for text in lower_case_text.split():
-        text_length = len(text) + 1
-
-        print(text_length)
-        
-        # print(text)
+    for character in lower_case_text:
+        if character in character_dict:
+            character_dict[character] += 1
+    
+    print(character_dict)
