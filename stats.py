@@ -11,7 +11,7 @@ def num_of_words(filepath):
     for words in book_text.split():
         word_count += 1
 	
-    return f"{word_count} words found in the document"
+    return f"Found {word_count} total words"
 
 def character_count(filepath):
     lower_case_text = get_book_text(filepath).lower()
@@ -24,8 +24,8 @@ def character_count(filepath):
         "z": 0, " ": 0
     }
 
-    for character in lower_case_text:
-        if character in character_dict:
-            character_dict[character] += 1
-    
-    print(character_dict)
+    for text in lower_case_text:
+        if text in character_dict:
+            character_dict[text] += 1 
+   
+    return character_dict
