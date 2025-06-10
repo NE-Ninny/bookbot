@@ -10,7 +10,7 @@ def main():
     print("----------- Word Count ----------")
     print(word_count)
     print("--------- Character Count -------")
-    print(num_of_characters)
+    # print(num_of_characters)
     print("============= END ===============")
 
 main()
